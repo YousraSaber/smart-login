@@ -1,0 +1,66 @@
+/*Style of all pages*/
+body {
+    background-color: #24353F;
+}
+
+.container {
+    background-color: #24353F;
+    color: #17A2AC;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+}
+
+.container .form-control {
+    background-color: #24353F;
+    color: #B6B6B6;
+}
+
+.container .btn {
+    border: 1px solid #17A2AC;
+    color: #17A2AC;
+    transition: all 500ms;
+}
+
+.container .btn:hover {
+    background-color: #17A2AC;
+    color: white;
+}
+
+#userName::placeholder,
+#userEmail::placeholder,
+#userPassword::placeholder,
+#userEmailLogin::placeholder,
+#userPasswordLogin::placeholder {
+    color: #B6B6B6;
+}
+
+.alert-danger {
+    background-color: transparent;
+    color: rgb(220, 53, 69);
+    border: none;
+}
+.alert-success{
+    background-color: transparent;
+    color: rgb(25, 177, 20);
+    border: none;
+}
+
+/* home */
+
+.navbar {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .btn {
+    border: 1px solid #FFC107;
+    color: #B6B6B6;
+    transition: all 500ms;
+}
+
+.navbar .btn:hover {
+    background-color: #FFC107;
+    color: white;
+}

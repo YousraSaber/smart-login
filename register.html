@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container p-5 my-5 w-75">
+        <h1 class=" text-center py-3">Smart Login System</h1>
+        <form>
+            <div class="mb-3">
+                <input type="text" placeholder="Enter your name" class="form-control" id="userName"
+                    aria-describedby="emailHelp">
+                <div class="alert alert-danger  d-none" role="alert">
+                    *Username must contain at least 2 letters and only letters are allowed.
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="email" placeholder="Enter your email" class="form-control" id="userEmail"
+                    aria-describedby="emailHelp">
+                <div class="alert alert-danger d-none" role="alert">
+                    *Please enter a valid email address (e.g., example@mail.com).
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="password" placeholder="Enter password" class="form-control" id="userPassword">
+                <div class="alert alert-danger d-none" role="alert">
+                    *Password must be at least 8 characters long and include at least one letter and one number.
+                </div>
+            </div>
+            <div id="success" class="alert alert-success text-center d-none" role="alert">
+                Registration successful
+            </div>
+            <button type="submit" id="signUpBtn" class="btn w-100 " disabled>Sign Up</button>
+            <p class="text-white text-center py-3">You have an account? <a href="#" id="signInLink"> SignIn</a></p>
+        </form>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
