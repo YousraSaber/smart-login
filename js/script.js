@@ -93,7 +93,7 @@ var signInLink = document.querySelector("#signInLink");
 if (signInLink) {
     signInLink.addEventListener("click", function (e) {
         e.preventDefault();
-        window.location.href = "login.html"
+        window.location.href = "index.html"
     })
 }
 
@@ -132,6 +132,16 @@ if (loginBtn) {
         }
     });
 }
+//-----------------------------------------------------
+
+// login -->> register
+var signUpLink = document.querySelector("#signUpLink");
+if (signUpLink) {
+    signUpLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.location.href = "register.html";
+    });
+}
 
 //----------------------------------------------------------
 //Home
@@ -139,13 +149,14 @@ var logOutBtn = document.querySelector("#logOutBtn");
 
 if (logOutBtn) {
     logOutBtn.addEventListener("click", function () {
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     })
 }
 var loggedUserName = localStorage.getItem("loggedUserName");
+var userNameHomeEl = document.getElementById("userNameHome");
 
-if (loggedUserName) {
-    document.getElementById("userNameHome").innerHTML = `
-        <h1 class="text-center py-3">Welcome ${loggedUserName}</h1>
-    `;
+if (userNameHomeEl && loggedUserName) {
+
+    userNameHomeEl.textContent = `Welcome ${loggedUserName}`;
 }
+
